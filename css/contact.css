@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contact Page */
+.contactPage {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 2%;
+    padding: 2% 0;
+}
+
+.contacMap {
+    width: 50%;
+}
+
+.iFramDiv {
+    width: 100%;
+    height: 500px;
+}
+
+.iFramDiv iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.formContainer {
+    width: 50%;
+    font-size: 1.1444rem;
+    color: #000;
+    line-height: 27px;
+    word-spacing: .22rem;
+}
+
+/* Form inputs*/
+.emailNameMain {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+
+.emailNameMain input {
+    width: 98%;
+    outline-color: #3a8bcd;
+    box-shadow: none;
+    margin-bottom: 30px;
+    padding: 1.9%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+
+}
+
+.subjectDiv input {
+    width: 100%;
+    outline-color: #3a8bcd;
+    box-shadow: none;
+    margin-bottom: 30px;
+    padding: 1.9%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+
+}
+.textAreaDiv textarea::placeholder
+{
+    color: #4c4a4a;
+    font-size: 1.3rem;
+}
+.emailNameMain input::placeholder
+{
+    color: #4c4a4a;
+    font-size: 1.3rem;
+}
+.subjectDiv input::placeholder
+{
+    color: #4c4a4a;
+    font-size: 1.3rem;
+}
+.textAreaDiv textarea {
+    width: 100%;
+    height: 200px;
+    outline-color: #3a8bcd;
+    box-shadow: none;
+    margin-bottom: 30px;
+    padding: 1.9%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+
+.sendMassageDiv button {
+    cursor: pointer;
+    background-color: #3a8bcd;
+    outline-color: #3a8bcd;
+    border-radius: 5px;
+    padding: 1.9%;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    transition: all 0.5s;
+    box-shadow: none;
+    border: none;
+}
+.sendMassageDiv button:hover {
+    background-color: #81baea;
+}
+
+.share {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding: 15px 0px;
+    font-size: 1.23rem;
+    color: #aaa;
+}
+
+.subjectDiv {
+    width: 100%;
+}
+
+.textAreaDiv {
+    width: 100%;
+}
+
+.share span i {
+    transition: all 0.5s;
+    background-color: #aaa;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.share span i:hover {
+    background-color: #3a8bcd;
+}
+
+/* Media Query */
+@media screen and (max-width:768px) {
+    nav ul {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    header {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contactPage{
+        display: block;
+    }
+    .contacMap{
+        width: 100%;
+    }
+    .formContainer{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .inputEmail {
+        width: 80%;
+        margin-bottom: 10px;
+        margin-right: 0;
+        /* font-size: 1rem; */
+    }
+
+    .combindFieds {
+        display: block;
+    }
+
+    .subcribBtn {
+        width: 80%;
+
+    }
+
+    .container {
+        width: 80%;
+
+
+    }
+
+}
+
+
+@media screen and (max-width:960px) {
+    .sectionHeading {
+        width: 80%;
+       
+        display: block;
+    }
+
+    .headingPartI {
+
+        width: 100%;
+    }
+
+    .headingPartII {
+        margin: 3% 0;
+        width: 100%;
+    }
+
+    .subcribBtn {
+       font-size: .73rem;
+    }
+    .footer-menu ul li a{
+        font-size: .7rem;
+    }
+}

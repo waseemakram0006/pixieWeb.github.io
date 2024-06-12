@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center Section */
+/* Section Heading */
+.sectionHeading {
+    width: 80%;
+    margin: 35px auto 35px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionHeading ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.sectionHeading ul a {
+    text-decoration: none;
+    color: #1e1e1e;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+.sectionHeading ul li:first-child a {
+    color: #3a8bcd;
+}
+
+.sectionHeading ul li a:hover {
+    color: #3a8bcd;
+}
+
+.sectionHeading h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-top: 15px;
+}
+
+/* Product List */
+.productLowerPart
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 31.5% 31.5% 31.5%;
+    gap: 2%;
+    padding: 3% 0;
+    margin-bottom: 40px;  
+}
+.productitemBorder
+{
+    font-size: 1.9rem;
+    cursor: pointer;
+    line-height: 1.6;
+    color: #3a8bcd;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 2.3%;
+    transition: all 0.5s;
+}
+.productimage-div{
+    width: 100%;
+    height: 450px; 
+ }
+ .productimage-div img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+/* Slider List */
+.SliderList{
+    margin: auto;
+    width: 80%;
+    border-top: 1px solid #eee;
+    padding: 3%;
+}
+.SliderList ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 20px 0;
+}
+.SliderList ul li a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #1e1e1e;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 0 5px ;
+  }
+
+.SliderList ul li:first-child a{
+    background-color: #3a8bcd;
+    border-color: #3a8bcd;
+    color: #fff;
+    border-radius: 5px;
+}
+.SliderList ul li a:hover{
+    background-color: #3a8bcd;
+    border-color: #3a8bcd;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* Media Query */
+@media screen and (max-width:768px) {
+    nav ul {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    header {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sectionHeading {
+        width: 80%;
+        margin: 35px auto;
+        display: block;
+        
+        /* justify-content: space-between;
+        align-items: center; */
+    }
+
+    .headingPartI {
+
+        width: 100%;
+    }
+
+    .headingPartII {
+        width: 100%;
+    }
+    /* Grid */
+    .productLowerPart
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: .5%;  
+}
+.SliderList{
+    margin-top: 90px;
+    padding: 10% 0 1% 0;
+}
+.SliderList ul{
+    border-top: 1px solid #eee;
+    padding:6% 0;
+}
+    .inputEmail {
+        width: 80%;
+        margin-bottom: 10px;
+        margin-right: 0;
+        /* font-size: 1rem; */
+    }
+
+    .combindFieds {
+        display: block;
+    }
+
+    .subcribBtn {
+        width: 80%;
+
+    }
+
+    .container {
+        width: 80%;
+
+
+    }
+
+}
+
+
+@media screen and (max-width:960px) {
+    .sectionHeading {
+        width: 80%;
+       
+        display: block;
+    }
+
+    .headingPartI {
+
+        width: 100%;
+    }
+
+    .headingPartII {
+        margin: 3% 0;
+        width: 100%;
+    }
+
+    .subcribBtn {
+       font-size: .73rem;
+    }
+    .footer-menu ul li a{
+        font-size: .7rem;
+    }
+}
